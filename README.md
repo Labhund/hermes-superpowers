@@ -1,6 +1,8 @@
 # Superpowers for Hermes
 
-Superpowers is a complete software development methodology and skill library that works natively with Hermes Agent. All skills have been audited and updated to use explicit Hermes tool calls (`write_file`, `read_file`, `terminal`, `patch`, `search_files`, `delegate_task`) instead of generic descriptions or shell commands.
+Superpowers for Hermes is a derivative work based on the original [obra/superpowers](https://github.com/obra/superpowers) project. The skills have been audited, updated, and converted to use explicit Hermes tool calls (`write_file`, `read_file`, `terminal`, `patch`, `search_files`, `delegate_task`) while preserving the original methodology and workflow.
+
+All rights are reserved to the original obra/superpowers project and its contributors.
 
 ## Overview
 
@@ -132,12 +134,23 @@ These skills were originally designed for Claude Code but have been converted to
 
 All skills now provide explicit, copy-pasteable tool examples that work reliably with Hermes.
 
-## License
+## Credits
 
-MIT
+- **Original obra/superpowers:** [Jesse Vincent](https://github.com/obra) - Core methodology and workflow
+- **Hermes Agent Conversion:** [Markus Williams](https://github.com/Labhund) - Audited and converted all skills to use explicit Hermes tool calls (`write_file`, `read_file`, `terminal`, `patch`, `search_files`, `delegate_task`)
+
+**Changes Made for Hermes Compatibility:**
+- Removed all bash/shell code blocks → explicit `terminal(command="...")` syntax
+- Replaced generic "Read file" → explicit `read_file(path="...")` syntax
+- Replaced generic "Create file" → explicit `write_file(path="...", content="...")` syntax
+- Updated all tool references to use Hermes-native parameter formats
+- Added "Onboarding for Hermes" section explaining automatic skill activation
 
 ## Credits
 
-- Superpowers methodology by Jesse Vincent
-- Hermes Agent integration and auditing
-- Community contributions and improvements
+- **Original obra/superpowers:** [Jesse Vincent](https://github.com/obra) - Core methodology and workflow
+- **Hermes Agent Conversion:** [Markus Williams](https://github.com/Labhund) - Audited and converted all skills to use explicit Hermes tool calls (`write_file`, `read_file`, `terminal`, `patch`, `search_files`, `delegate_task`)
+
+## License
+
+MIT License - See [LICENSE](LICENSE) file for full text
