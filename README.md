@@ -134,11 +134,6 @@ These skills were originally designed for Claude Code but have been converted to
 
 All skills now provide explicit, copy-pasteable tool examples that work reliably with Hermes.
 
-## Credits
-
-- **Original obra/superpowers:** [Jesse Vincent](https://github.com/obra) - Core methodology and workflow
-- **Hermes Agent Conversion:** [Markus Williams](https://github.com/Labhund) - Audited and converted all skills to use explicit Hermes tool calls (`write_file`, `read_file`, `terminal`, `patch`, `search_files`, `delegate_task`)
-
 **Changes Made for Hermes Compatibility:**
 - Removed all bash/shell code blocks → explicit `terminal(command="...")` syntax
 - Replaced generic "Read file" → explicit `read_file(path="...")` syntax
